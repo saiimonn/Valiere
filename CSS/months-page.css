@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+html {
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.icon button{
+    margin-left: 1.875rem;
+    font-size: 50px;
+    border: none;
+    background: inherit;
+  }
+
+.icon button:hover {
+    cursor: pointer;
+  }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -220px; /* Hidden off-screen */
+    width: 13.75rem;
+    height: 100vh;
+    background-color: #f4f1e1;
+    opacity: 0.7;
+    padding: 20px;
+    transition: left 0.3s ease; /* Slide-in animation */
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.sidebar ul li {
+    margin: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    color: black;
+    border-radius: 5px;
+    padding: 0.625rem;
+    font-family: cursive;
+}
+
+.sidebar ul li a:hover {
+    transform: translateX(10px);
+    background-color: #f3d4a5;
+}
+
+.content-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-area h1 {
+    font-size: 2rem;
+}
+
+.year-div {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; /* Take up the full width of the parent */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    font-family: "Chewy";
+}
+
+.year-div h1{
+    font-size: 2.5rem;
+}
+
+.month-card {
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    opacity: 0.85;
+    width: 45%; 
+    height: 4.5rem;
+    margin: 0.9375rem 1.25rem;
+    transition: all 0.5s ease; /* Smooth animation for all properties */
+    text-align: center;
+    overflow: hidden;
+}
+
+.month-card h1 {
+    font-size: 2.5rem;
+}
+
+.month-card p {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.month-card:hover {
+    transform: translateY(-15px);
+    height: 350px; /* Increase height */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel = "stylesheet" href = "/CSS/send-message.css">
+<body>
+
+    <div class = "icon">
+        <button id = "toggle-sidebar">≡</button>
+    </div>
+
+    <div class = "sidebar">
+        <ul>
+            <li><a href = "home-page.html">Home</a></li>
+            <li><a href = "months-page.html">Monthsaries</a></li>
+            <li><a href = "dates.html">Dates</a></li>
+            <!-- <li><a href = "sticky-notes.html">Sticky Notes</a></li> needs backend -->
+            <!-- <li><a href = "">Schedule a date</a></li> needs backend--> 
+        </ul>
+    </div>
+    
+    <div class = "content">
+        <div class="contact-form">
+            <h2>Message for your boyfriend</h2>
+    
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Write your message here..." required></textarea>
+            </div>
+    
+            <button class="btn-submit" id="send-message">Send Message</button>
+        </div>
+    </div>
+
+    <script src = "/JAVASCRIPT/togglebar.js" defer></script>
+    <script src = "/JAVASCRIPT/send-email.js" defer></script>
+</body>
+</html>
